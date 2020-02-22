@@ -1,0 +1,16 @@
+server:
+  port: 10000
+
+spring:
+  application:
+    name: user-service
+  main:
+    allow-bean-definition-overriding: true
+  jackson:
+    time-zone: GMT+8
+    date-format: yyyy-MM-dd HH:mm:ss
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.112.1:8848  # 注意改成你的nacos地址
+
